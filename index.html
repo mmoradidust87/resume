@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد حسین مرادی دوست | رزومه شخصی - Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Vazirmatn', 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .en-text {
+            font-family: 'Inter', sans-serif;
+            direction: ltr;
+            display: block;
+        }
+        /* Perspective for 3D Laptop */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+        .laptop-screen {
+            transform-origin: bottom;
+            transform: rotateX(88deg);
+            transition: transform 0.1s ease-out;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px rgba(59, 130, 246, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100">
+
+    <!-- Scroll Section 1: Intro & Laptop Animation -->
+    <div id="hero-scroll" class="h-[250vh] relative">
+        <div class="sticky top-0 h-screen w-full flex flex-col items-center justify-center overflow-hidden">
+            
+            <!-- Hero Title -->
+            <div id="hero-title" class="text-center z-10 transition-opacity duration-300 mb-6">
+                <h1 class="text-3xl md:text-5xl font-extrabold text-blue-400 mb-2">محمد حسین مرادی دوست</h1>
+                <span class="en-text text-xl md:text-2xl font-bold text-slate-300">Mohammad Hossein Moradi Doust</span>
+                <p class="mt-4 text-slate-300 text-base md:text-lg">توسعه‌دهنده نرم‌افزار، طراح وب و متخصص هوش مصنوعی</p>
+                <span class="en-text text-sm text-slate-400">Software Developer, Web Designer & AI Engineer</span>
+                <div class="mt-6 animate-bounce text-slate-400 text-sm">
+                    <i class="fas fa-arrow-down mb-1"></i>
+                    <p>برای مشاهده رزومه اسکرول کنید | Scroll down to view resume</p>
+                </div>
+            </div>
+
+            <!-- Laptop Container -->
+            <div id="laptop-container" class="relative w-80 md:w-[500px] h-52 md:h-[300px] perspective-1000 transition-transform duration-300">
+                <!-- Laptop Lid / Screen -->
+                <div id="laptop-screen" class="laptop-screen absolute top-0 w-full h-full bg-slate-900 border-4 border-slate-700 rounded-t-xl p-3 flex flex-col justify-between shadow-2xl overflow-hidden">
+                    <!-- Browser Bar -->
+                    <div class="bg-slate-800 rounded-lg p-2 flex items-center space-x-2 space-x-reverse border border-slate-700">
+                        <div class="flex space-x-1.5 space-x-reverse">
+                            <span class="w-2.5 h-2.5 bg-red-500 rounded-full inline-block"></span>
+                            <span class="w-2.5 h-2.5 bg-yellow-500 rounded-full inline-block"></span>
+                            <span class="w-2.5 h-2.5 bg-green-500 rounded-full inline-block"></span>
+                        </div>
+                        <div class="bg-slate-950 text-slate-300 text-xs px-3 py-1 rounded flex-1 text-left font-mono truncate border border-slate-800">
+                            https://<span id="typed-url"></span>
+                        </div>
+                    </div>
+
+                    <!-- Screen Content Mock -->
+                    <div class="flex-1 flex flex-col items-center justify-center text-center p-2">
+                        <div id="screen-welcome" class="opacity-0 transition-opacity duration-500">
+                            <i class="fas fa-check-circle text-green-400 text-3xl mb-2"></i>
+                            <p class="text-xs text-slate-200">در حال انتقال به رزومه...</p>
+                            <span class="en-text text-[10px] text-slate-400">Loading Portfolio...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop Base / Keyboard -->
+                <div class="absolute bottom-0 w-full h-4 bg-slate-700 rounded-b-xl shadow-lg border-t border-slate-600 flex justify-center">
+                    <div class="w-16 h-1 bg-slate-500 rounded-full mt-1"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Main Resume Content Section -->
+    <main id="resume-content" class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- Header / Contact Info -->
+        <header class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 backdrop-blur-md shadow-xl glow-effect">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                <div>
+                    <h1 class="text-3xl font-bold text-slate-100">محمد حسین مرادی دوست</h1>
+                    <span class="en-text text-lg text-blue-400 font-semibold">Mohammad Hossein Moradi Doust</span>
+                    <p class="text-slate-400 text-sm mt-2">توسعه‌دهنده نرم‌افزار، وب و مدل‌های هوش مصنوعی</p>
+                    <span class="en-text text-xs text-slate-500">Software, Web & AI Solutions Engineer</span>
+                </div>
+                <div class="space-y-2 text-sm text-slate-300 dir-ltr text-right">
+                    <div class="flex items-center gap-3 justify-end">
+                        <span>mmoradidust87@gmail.com</span>
+                        <i class="fas fa-envelope text-blue-400"></i>
+                    </div>
+                    <div class="flex items-center gap-3 justify-end">
+                        <span>+98 903 181 3270</span>
+                        <i class="fas fa-phone text-blue-400"></i>
+                    </div>
+                    <div class="flex items-center gap-3 justify-end">
+                        <a href="https://github.com/mmoradidust87" target="_blank" class="hover:text-blue-400 transition">github.com/mmoradidust87</a>
+                        <i class="fab fa-github text-blue-400"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="bg-slate-900/50 border border-slate-800 rounded-2xl p-8">
+            <h2 class="text-xl font-bold text-blue-400 flex items-center gap-2 mb-2">
+                <i class="fas fa-user-circle"></i>
+                درباره من
+            </h2>
+            <span class="en-text text-sm font-semibold text-slate-400 mb-4">About Me</span>
+            <div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
+                <p>
+                    توسعه‌دهنده باانگیزه و خلاق با بیش از ۴ سال تجربه فعالیت تخصصی در حوزه برنامه نویسی، طراحی وب و پیاده‌سازی سیستم‌های مبتنی بر هوش مصنوعی (از سال ۱۴۰۱). دارای مدرک معتبر از <strong>پارک علم و فناوری قزوین</strong> و علاقه‌مند به حل مسایل پیچیده نرم‌افزاری و توسعه ابزارهای نوآورانه.
+                </p>
+                <p class="en-text text-slate-400 text-xs md:text-sm">
+                    Passionate and innovative developer with over 4 years of hands-on experience in software development, web engineering, and AI-driven systems (since 2022). Certified by the <strong>Qazvin Science and Technology Park</strong>, dedicated to solving complex technical challenges and building modern software tools.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="bg-slate-900/50 border border-slate-800 rounded-2xl p-8">
+            <h2 class="text-xl font-bold text-blue-400 flex items-center gap-2 mb-2">
+                <i class="fas fa-code"></i>
+                مهارت‌های فنی
+            </h2>
+            <span class="en-text text-sm font-semibold text-slate-400 mb-6">Technical Skills</span>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Python -->
+                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-slate-200">Python</h3>
+                        <span class="en-text text-xs text-slate-500">Advanced / AI & Backend</span>
+                    </div>
+                    <div class="text-amber-400 space-x-1 space-x-reverse dir-ltr">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- SQL Server -->
+                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-slate-200">SQL Server</h3>
+                        <span class="en-text text-xs text-slate-500">Database Design & Querying</span>
+                    </div>
+                    <div class="text-amber-400 space-x-1 space-x-reverse dir-ltr">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- HTML -->
+                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-slate-200">HTML</h3>
+                        <span class="en-text text-xs text-slate-500">Web Structure</span>
+                    </div>
+                    <div class="space-x-1 space-x-reverse dir-ltr">
+                        <span class="text-amber-400"><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="text-slate-700"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+
+                <!-- CSS -->
+                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-slate-200">CSS</h3>
+                        <span class="en-text text-xs text-slate-500">Styling & UI Basics</span>
+                    </div>
+                    <div class="space-x-1 space-x-reverse dir-ltr">
+                        <span class="text-amber-400"><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="text-slate-700"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="bg-slate-900/50 border border-slate-800 rounded-2xl p-8 space-y-8">
+            <div>
+                <h2 class="text-xl font-bold text-blue-400 flex items-center gap-2 mb-1">
+                    <i class="fas fa-project-diagram"></i>
+                    پروژه‌های شاخص
+                </h2>
+                <span class="en-text text-sm font-semibold text-slate-400">Featured Projects</span>
+            </div>
+
+            <!-- Project 1: XCodeReview Pro -->
+            <div class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden shadow-lg hover:border-blue-500/50 transition">
+                <!-- XCodeReview Interactive Image Carousel -->
+                <div class="relative w-full h-72 md:h-96 bg-slate-900 border-b border-slate-800 overflow-hidden group">
+                    <div id="xcode-slider" class="w-full h-full flex transition-transform duration-500 ease-out">
+                        <img src="images/xcode1.png" onclick="openZoomModal(this.src)" alt="XCodeReview Interface Python" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/xcode2.png" onclick="openZoomModal(this.src)" alt="XCodeReview C Language" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/xcode3.png" onclick="openZoomModal(this.src)" alt="XCodeReview C++ Language" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/xcode4.png" onclick="openZoomModal(this.src)" alt="XCodeReview C# Language" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/xcode5.png" onclick="openZoomModal(this.src)" alt="XCodeReview Go Language" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/xcode6.png" onclick="openZoomModal(this.src)" alt="XCodeReview Report View" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/xcode7.png" onclick="openZoomModal(this.src)" alt="XCodeReview Execution Details" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/xcode8.png" onclick="openZoomModal(this.src)" alt="XCodeReview Security Analysis" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/xcode9.png" onclick="openZoomModal(this.src)" alt="XCodeReview Final Score" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                    </div>
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none"></div>
+
+                    <!-- Zoom Hint Badge -->
+                    <div class="absolute top-3 left-3 bg-slate-900/80 text-slate-300 text-[10px] md:text-xs px-2.5 py-1 rounded-full border border-slate-700 pointer-events-none flex items-center gap-1 z-10">
+                        <i class="fas fa-search-plus text-blue-400"></i>
+                        <span>برای بزرگ‌نمایی کلیک کنید</span>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <button onclick="prevXcodeSlide()" class="absolute left-3 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center border border-slate-700 transition shadow-lg opacity-80 group-hover:opacity-100 z-10">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button onclick="nextXcodeSlide()" class="absolute right-3 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center border border-slate-700 transition shadow-lg opacity-80 group-hover:opacity-100 z-10">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicators Dots -->
+                    <div id="xcode-dots" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-1.5 space-x-reverse z-10"></div>
+                </div>
+                
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-start flex-wrap gap-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-100">XCodeReview Pro - سیستم هوشمند بررسی، بازبینی و امنیت کد</h3>
+                            <span class="en-text text-sm text-blue-400">XCodeReview Pro - AI Code Reviewer & Security Analyzer</span>
+                        </div>
+                        <span class="px-3 py-1 bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs rounded-full">Python / AI / Security</span>
+                    </div>
+                    
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        محیط توسعه و آنالیز هوشمند کد با پشتیبانی از ۵ زبان برنامه‌نویسی شامل <strong>C#, C++, C, Go, Python</strong>. این سیستم امکان اجرا و اشکال‌زدایی اتوماتیک کد را فراهم کرده و با بهره‌گیری از مدل‌های هوش مصنوعی، بخش‌های معیوب کد را شناسایی و تصحیح می‌نماید. همچنین، این نرم‌افزار الگوریتم‌های رتبه‌بندی کیفیت، پیچیدگی کدهای نرم‌افزاری و بررسی سوابق اجرا را محاسبه کرده و به دلیل داشتن محیط ایزوله (Sandbox) امن، قابلیت اجرای کدهای مشکوک به بدافزار را جهت تحلیل امنیتی میسر می‌سازد.
+                    </p>
+                    <p class="en-text text-slate-400 text-xs leading-relaxed">
+                        An intelligent code review and analysis platform supporting 5 major programming languages: <strong>C#, C++, C, Go, and Python</strong>. It executes and debugs code, leveraging integrated AI to identify flaws, auto-fix code errors, and provide comprehensive quality and security scoring. Built with a secure sandbox environment, it allows safe analysis of malware and security-sensitive scripts.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project 2: Damo -->
+            <div class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden shadow-lg hover:border-green-500/50 transition">
+                
+                <!-- DAMO Interactive Image Carousel Slider -->
+                <div class="relative w-full h-72 md:h-96 bg-slate-900 border-b border-slate-800 overflow-hidden group">
+                    <div id="damo-slider" class="w-full h-full flex transition-transform duration-500 ease-out">
+                        <img src="images/damo dashbord.png" onclick="openZoomModal(this.src)" alt="داشبورد اصلی دامو" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/damo1.png" onclick="openZoomModal(this.src)" alt="شناسنامه دام‌ها" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/damo2.png" onclick="openZoomModal(this.src)" alt="ثبت و مدیریت تلقیح" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/damo3.png" onclick="openZoomModal(this.src)" alt="ثبت و مدیریت زایش" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/damo4.png" onclick="openZoomModal(this.src)" alt="تقویم پیش‌بینی زایش" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/damo5.png" onclick="openZoomModal(this.src)" alt="مدیریت مالی و حسابداری" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/damo6.png" onclick="openZoomModal(this.src)" alt="مدیریت انبار خوراک و دارو" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/damo7.png" onclick="openZoomModal(this.src)" alt="پروفایل کاربری فارم" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/damo8.png" onclick="openZoomModal(this.src)" alt="ثبت‌نام فارم جدید" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                        <img src="images/damo9.png" onclick="openZoomModal(this.src)" alt="صفحه ورود به حساب" class="w-full h-full object-cover flex-shrink-0 cursor-zoom-in">
+                    </div>
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none"></div>
+
+                    <!-- Zoom Hint Badge -->
+                    <div class="absolute top-3 left-3 bg-slate-900/80 text-slate-300 text-[10px] md:text-xs px-2.5 py-1 rounded-full border border-slate-700 pointer-events-none flex items-center gap-1 z-10">
+                        <i class="fas fa-search-plus text-green-400"></i>
+                        <span>برای بزرگ‌نمایی کلیک کنید</span>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <button onclick="prevDamoSlide()" class="absolute left-3 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-green-600 text-white w-10 h-10 rounded-full flex items-center justify-center border border-slate-700 transition shadow-lg opacity-80 group-hover:opacity-100 z-10">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button onclick="nextDamoSlide()" class="absolute right-3 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-green-600 text-white w-10 h-10 rounded-full flex items-center justify-center border border-slate-700 transition shadow-lg opacity-80 group-hover:opacity-100 z-10">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicators Dots -->
+                    <div id="damo-dots" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-1.5 space-x-reverse z-10"></div>
+                </div>
+
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-start flex-wrap gap-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-100">DAMO - سامانه جامع مدیریت هوشمند و مکانیزه دامداری</h3>
+                            <span class="en-text text-sm text-green-400">DAMO - Smart & Integrated Farm Management System</span>
+                        </div>
+                        <span class="px-3 py-1 bg-green-500/10 text-green-400 border border-green-500/20 text-xs rounded-full">Web Application / SQL / Automation</span>
+                    </div>
+                    
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        سامانه جامع <strong>«دامو»</strong> یک پلتفرم پیشرفته و یکپارچه تحت وب جهت اتوماسیون کامل امور گاوداری و فارم‌های صنعتی است. این سیستم مجهز به بخش‌های متنوعی از جمله <strong>شناسنامه الکترونیکی دام‌ها</strong>، <strong>ثبت دقیق تلقیح و اسپرم‌شناسی</strong>، <strong>ثبت اطلاعات زایش و پلاک‌گذاری گوساله‌ها</strong>، <strong>تقویم هوشمند پیش‌بینی زایش</strong>، <strong>مدیریت مالی و حسابداری</strong> و <strong>انبارداری دقیق خوراک و دارو</strong> می‌باشد. هسته اصلی نرم‌افزار به الگوریتم پیش‌بینی ۹ ماه و ۱۰ روزه بارداری مجهز است که با هشدارهای دوره‌ای زایمان، مدیریت گله را هوشمند و بهینه می‌سازد.
+                    </p>
+                    <p class="en-text text-slate-400 text-xs leading-relaxed">
+                        <strong>DAMO</strong> is an all-in-one smart farm management web application designed for industrial cattle breeding. It features digital cattle profiles, insemination tracking, calving logs, automated pregnancy prediction calendar (9 months & 10 days duration), financial accounting, and feed/medicine inventory tracking. It automates delivery alerts to maximize herd reproductive efficiency.
+                    </p>
+
+                    <!-- Live Website Button -->
+                    <div class="pt-3 flex flex-wrap items-center justify-between gap-4 border-t border-slate-800">
+                        <a href="https://mmoradidust87.github.io/DAMO/" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-green-600 hover:bg-green-500 text-white text-xs md:text-sm font-semibold rounded-lg transition shadow-lg shadow-green-900/30">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>مشاهده آنلاین سامانه دامو</span>
+                            <span class="en-text font-normal opacity-80">(Live Website)</span>
+                        </a>
+                        <span class="text-xs text-slate-400 font-mono flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                            Online Platform
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-slate-500 text-xs space-y-1 pt-8 border-t border-slate-800">
+            <p>© ۲۰۲۶ محمد حسین مرادی دوست - تمامی حقوق محفوظ است.</p>
+            <p class="en-text">© 2026 Mohammad Hossein Moradi Doust - All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- Image Zoom Modal (Lightbox) -->
+    <div id="zoom-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4 transition-opacity duration-300">
+        <button onclick="closeZoomModal()" class="absolute top-5 right-5 text-slate-300 hover:text-white bg-slate-800/80 p-3 rounded-full border border-slate-700 transition shadow-lg z-50">
+            <i class="fas fa-times text-xl"></i>
+        </button>
+        <div class="relative max-w-5xl max-h-[90vh] flex items-center justify-center">
+            <img id="zoom-img" src="" alt="نمای بزرگ پروژه" class="max-w-full max-h-[85vh] rounded-xl object-contain shadow-2xl border border-slate-800">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Hero & Laptop Scroll Animation
+        const heroScroll = document.getElementById('hero-scroll');
+        const laptopScreen = document.getElementById('laptop-screen');
+        const laptopContainer = document.getElementById('laptop-container');
+        const heroTitle = document.getElementById('hero-title');
+        const typedUrl = document.getElementById('typed-url');
+        const screenWelcome = document.getElementById('screen-welcome');
+        
+        const fullUrl = "mmoradidust87.github.io/resume";
+        let typed = false;
+
+        window.addEventListener('scroll', () => {
+            const scrollPercent = Math.min(window.scrollY / (heroScroll.clientHeight - window.innerHeight), 1);
+            
+            const angle = 88 - (scrollPercent * 88);
+            laptopScreen.style.transform = `rotateX(${angle}deg)`;
+
+            heroTitle.style.opacity = 1 - (scrollPercent * 1.5);
+
+            if (scrollPercent > 0.6) {
+                const scale = 1 + (scrollPercent - 0.6) * 1.5;
+                laptopContainer.style.transform = `scale(${scale})`;
+            } else {
+                laptopContainer.style.transform = `scale(1)`;
+            }
+
+            if (scrollPercent >= 0.85 && !typed) {
+                typed = true;
+                typeWriterEffect();
+            }
+        });
+
+        function typeWriterEffect() {
+            let index = 0;
+            typedUrl.innerText = "";
+            const interval = setInterval(() => {
+                if (index < fullUrl.length) {
+                    typedUrl.innerText += fullUrl.charAt(index);
+                    index++;
+                } else {
+                    clearInterval(interval);
+                    screenWelcome.classList.remove('opacity-0');
+                    screenWelcome.classList.add('opacity-100');
+                }
+            }, 50);
+        }
+
+        // --- DAMO Carousel Logic ---
+        let currentDamoIndex = 0;
+        const damoSlider = document.getElementById('damo-slider');
+        const damoDotsContainer = document.getElementById('damo-dots');
+        const totalDamoSlides = damoSlider.children.length;
+
+        for (let i = 0; i < totalDamoSlides; i++) {
+            const dot = document.createElement('button');
+            dot.className = `w-2 h-2 rounded-full transition-all ${i === 0 ? 'bg-green-400 w-5' : 'bg-slate-600'}`;
+            dot.onclick = () => goToDamoSlide(i);
+            damoDotsContainer.appendChild(dot);
+        }
+
+        function updateDamoCarousel() {
+            damoSlider.style.transform = `translateX(${currentDamoIndex * 100}%)`;
+            Array.from(damoDotsContainer.children).forEach((dot, idx) => {
+                dot.className = idx === currentDamoIndex 
+                    ? 'w-5 h-2 rounded-full bg-green-400 transition-all' 
+                    : 'w-2 h-2 rounded-full bg-slate-600 transition-all';
+            });
+        }
+
+        function nextDamoSlide() {
+            currentDamoIndex = (currentDamoIndex + 1) % totalDamoSlides;
+            updateDamoCarousel();
+        }
+
+        function prevDamoSlide() {
+            currentDamoIndex = (currentDamoIndex - 1 + totalDamoSlides) % totalDamoSlides;
+            updateDamoCarousel();
+        }
+
+        function goToDamoSlide(index) {
+            currentDamoIndex = index;
+            updateDamoCarousel();
+        }
+
+        // Auto play DAMO Carousel
+        setInterval(nextDamoSlide, 4000);
+
+        // --- XCodeReview Carousel Logic ---
+        let currentXcodeIndex = 0;
+        const xcodeSlider = document.getElementById('xcode-slider');
+        const xcodeDotsContainer = document.getElementById('xcode-dots');
+        const totalXcodeSlides = xcodeSlider.children.length;
+
+        for (let i = 0; i < totalXcodeSlides; i++) {
+            const dot = document.createElement('button');
+            dot.className = `w-2 h-2 rounded-full transition-all ${i === 0 ? 'bg-blue-400 w-5' : 'bg-slate-600'}`;
+            dot.onclick = () => goToXcodeSlide(i);
+            xcodeDotsContainer.appendChild(dot);
+        }
+
+        function updateXcodeCarousel() {
+            xcodeSlider.style.transform = `translateX(${currentXcodeIndex * 100}%)`;
+            Array.from(xcodeDotsContainer.children).forEach((dot, idx) => {
+                dot.className = idx === currentXcodeIndex 
+                    ? 'w-5 h-2 rounded-full bg-blue-400 transition-all' 
+                    : 'w-2 h-2 rounded-full bg-slate-600 transition-all';
+            });
+        }
+
+        function nextXcodeSlide() {
+            currentXcodeIndex = (currentXcodeIndex + 1) % totalXcodeSlides;
+            updateXcodeCarousel();
+        }
+
+        function prevXcodeSlide() {
+            currentXcodeIndex = (currentXcodeIndex - 1 + totalXcodeSlides) % totalXcodeSlides;
+            updateXcodeCarousel();
+        }
+
+        function goToXcodeSlide(index) {
+            currentXcodeIndex = index;
+            updateXcodeCarousel();
+        }
+
+        // Auto play XCodeReview Carousel
+        setInterval(nextXcodeSlide, 4500);
+
+        // --- Image Zoom Modal Logic ---
+        const zoomModal = document.getElementById('zoom-modal');
+        const zoomImg = document.getElementById('zoom-img');
+
+        function openZoomModal(src) {
+            zoomImg.src = src;
+            zoomModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Lock background scrolling
+        }
+
+        function closeZoomModal() {
+            zoomModal.classList.add('hidden');
+            zoomImg.src = '';
+            document.body.style.overflow = 'auto'; // Unlock background scrolling
+        }
+
+        // Close modal on click background
+        zoomModal.addEventListener('click', (e) => {
+            if (e.target === zoomModal) {
+                closeZoomModal();
+            }
+        });
+
+        // Close modal on ESC key
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !zoomModal.classList.contains('hidden')) {
+                closeZoomModal();
+            }
+        });
+    </script>
+</body>
+</html>
